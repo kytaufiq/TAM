@@ -1,0 +1,83 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Group untuk menu utama -->
+    <group android:checkableBehavior="single">
+        <!-- Header -->
+        <item
+            android:id="@+id/nav_header"
+            android:title="Menu Utama"
+            android:enabled="false" />
+
+        <!-- Beranda -->
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/home"
+            android:title="@string/menu_beranda" />
+
+        <!-- Trending -->
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/trending"
+            android:title="@string/menu_trending" />
+
+        <!-- Rekomendasi -->
+        <item
+            android:id="@+id/nav_rekomendasi"
+            android:icon="@drawable/rekomendasi"
+            android:title="@string/menu_rekomendasi" />
+
+        <!-- Kategori dengan submenu -->
+        <item
+            android:id="@+id/nav_kategori"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_kategori">
+            <menu>
+                <item
+                    android:id="@+id/nav_hp_2jutaan"
+                    android:title="HP 2 Jutaan Terbaik" />
+                <item
+                    android:id="@+id/nav_hp_3jutaan"
+                    android:title="HP 3 Jutaan Terbaik" />
+                <item
+                    android:id="@+id/nav_hp_4jutaan"
+                    android:title="HP 4 Jutaan Terbaik" />
+                <item
+                    android:id="@+id/nav_gaming"
+                    android:title="Gaming Terbaik" />
+                <item
+                    android:id="@+id/nav_kamera"
+                    android:title="Kamera Terbaik" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_spacer2"
+            android:title="‎"
+            android:enabled="false" />
+        <item
+            android:id="@+id/nav_spacer3"
+            android:title="‎"
+            android:enabled="false" />
+        <item
+            android:id="@+id/nav_spacer4"
+            android:title="‎"
+            android:enabled="false" />
+        <item
+            android:id="@+id/nav_spacer5"
+            android:title="‎"
+            android:enabled="false" />
+    </group>
+
+
+    <group>
+        <item
+            android:id="@+id/nav_tentang"
+            android:icon="@drawable/tentang"
+            android:title="Tentang" />
+    </group>
+</menu>

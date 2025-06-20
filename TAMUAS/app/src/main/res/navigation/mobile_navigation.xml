@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_beranda">
+
+    <fragment
+        android:id="@+id/nav_beranda"
+        android:name="com.example.tamuas.ui.beranda.BerandaFragment"
+        android:label="@string/menu_beranda"
+        tools:layout="@layout/fragment_beranda" />
+    <fragment
+        android:id="@+id/nav_rekomendasi"
+        android:name="com.example.tamuas.ui.rekomendasi.RekomendasiFragment"
+        android:label="@string/menu_rekomendasi"
+        tools:layout="@layout/fragment_rekomendasi" />
+    <fragment
+        android:id="@+id/nav_trending"
+        android:name="com.example.tamuas.ui.trending.TrendingFragment"
+        android:label="@string/menu_trending"
+        tools:layout="@layout/fragment_trending" />
+    <fragment
+        android:id="@+id/nav_kategori"
+        android:name="com.example.tamuas.ui.kategori.KategoriFragment"
+        android:label="@string/menu_kategori"
+        tools:layout="@layout/fragment_kategori" />
+    <fragment
+        android:id="@+id/nav_hp_2jutaan"
+        android:name="com.example.tamuas.ui.Hp2Jutaan.hp2jutaanFragment"
+        android:label="@string/menu_2jutaan"
+        tools:layout="@layout/fragment_hp2jutaan" />
+    <fragment
+        android:id="@+id/nav_hp_3jutaan"
+        android:name="com.example.tamuas.ui.Hp3Jutaan.hp3jutaanFragment"
+        android:label="@string/menu_3jutaan"
+        tools:layout="@layout/fragment_hp3jutaan" />
+    <fragment
+        android:id="@+id/nav_hp_4jutaan"
+        android:name="com.example.tamuas.ui.Hp4Jutaan.hp4jutaanFragment"
+        android:label="@string/menu_4jutaan"
+        tools:layout="@layout/fragment_hp4jutaan" />
+    <fragment
+        android:id="@+id/nav_gaming"
+        android:name="com.example.tamuas.ui.gaming.gamingFragment"
+        android:label="@string/menu_gaming"
+        tools:layout="@layout/fragment_gaming" />
+    <fragment
+        android:id="@+id/nav_kamera"
+        android:name="com.example.tamuas.ui.kamera.kameraFragment"
+        android:label="@string/menu_kamera"
+        tools:layout="@layout/fragment_kamera" />
+    <fragment
+        android:id="@+id/nav_tentang"
+        android:name="com.example.tamuas.ui.tentang.TentangFragment"
+        android:label="@string/menu_tentang"
+        tools:layout="@layout/fragment_tentang" />
+</navigation>
