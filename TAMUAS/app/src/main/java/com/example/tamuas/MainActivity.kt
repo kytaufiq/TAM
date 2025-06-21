@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_beranda, R.id.nav_rekomendasi, R.id.nav_trending, R.id.nav_kategori ,R.id.nav_hp_2jutaan ,R.id.nav_hp_3jutaan , R.id.nav_hp_4jutaan ,R.id.nav_gaming ,R.id.nav_kamera ,R.id.nav_tentang
+                R.id.nav_beranda, R.id.nav_rekomendasi, R.id.nav_trending, R.id.nav_kategori ,R.id.nav_hp_2jutaan ,R.id.nav_hp_3jutaan , R.id.nav_hp_4jutaan ,R.id.nav_gaming ,R.id.nav_kamera ,R.id.nav_tentang, R.id.nav_detail
             ), drawerLayout
         )
 

@@ -512,7 +512,9 @@
                         android:textColor="#666666"
                         android:textSize="12sp" />
 
+                    <!-- Modifikasi untuk tombol iPhone 15 Pro -->
                     <LinearLayout
+                        android:id="@+id/btn_detail_iphone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/button_background"
@@ -529,7 +531,6 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
                             android:textStyle="bold" />
-
                     </LinearLayout>
 
                 </LinearLayout>
@@ -704,7 +705,9 @@
                         android:textColor="#666666"
                         android:textSize="12sp" />
 
+                    <!-- Modifikasi untuk tombol Samsung Galaxy S24 Ultra -->
                     <LinearLayout
+                        android:id="@+id/btn_detail_samsung"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/button_background"
@@ -721,7 +724,6 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
                             android:textStyle="bold" />
-
                     </LinearLayout>
 
                 </LinearLayout>
@@ -896,7 +898,9 @@
                         android:textColor="#666666"
                         android:textSize="12sp" />
 
+                    <!-- Modifikasi untuk tombol Google Pixel 8 Pro -->
                     <LinearLayout
+                        android:id="@+id/btn_detail_google"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/button_background"
