@@ -10,11 +10,10 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Header Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HP 2 Jutaan Terbaik"
+            android:text="HP 4 Jutaan Terbaik"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -23,12 +22,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Smartphone terbaik dengan budget di bawah 2 Juta     Rupiah "
+            android:text="Smartphone terbaik dengan budget 3-4 juta rupiah"
             android:textSize="14sp"
             android:textColor="#666666"
             android:layout_marginBottom="20dp" />
 
-        <!-- Winner Card -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,9 +67,9 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/hp_iphone15pro"
+                    android:src="@drawable/hp_4jt_1_redminote13pro5g"
                     android:layout_marginRight="16dp"
-                    />
+                    android:contentDescription="Redmi Note 13 Pro 5G" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -82,7 +80,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="iPhone 15 Pro Max"
+                        android:text="Redmi Note 13 Pro 5G"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="#000000"
@@ -91,7 +89,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Apple"
+                        android:text="Xiaomi"
                         android:textSize="14sp"
                         android:textColor="#666666"
                         android:layout_marginBottom="4dp" />
@@ -105,7 +103,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="⭐ 4.9"
+                            android:text="⭐ 4.5"
                             android:textSize="14sp"
                             android:textColor="#000000"
                             android:layout_marginRight="8dp" />
@@ -113,7 +111,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Score: 9.8/10"
+                            android:text="Best Choice"
                             android:textSize="14sp"
                             android:textColor="#000000"
                             android:background="#FFB74D"
@@ -123,10 +121,53 @@
                             android:paddingBottom="2dp" />
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 7s Gen 2"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200MP"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Performa terbaik dengan A17 Pro dan kamera 5x telephoto"
+                        android:text="5100mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 200MP dengan performa flagship killer"
                         android:textSize="13sp"
                         android:textColor="#444444"
                         android:layout_marginBottom="8dp" />
@@ -134,7 +175,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rp 21.999.000"
+                        android:text="Rp 3.999.000"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="#2196F3" />
@@ -155,27 +196,29 @@
                 android:paddingBottom="10dp" />
         </LinearLayout>
 
-        <!-- Ranking Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ranking Smartphone Terbaik"
+            android:text="Top 5 HP 4 Jutaan Terbaik"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#333333"
             android:layout_marginBottom="16dp" />
 
-        <!-- Rank 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginBottom="8dp"
             android:background="#FFFFFF"
             android:elevation="1dp">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:text="#1"
@@ -186,74 +229,110 @@
                 android:gravity="center"
                 android:layout_marginRight="12dp" />
 
-
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/hp_iphone15pro"
-                android:layout_marginRight="12dp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="iPhone 15 Pro Max"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:layout_marginBottom="2dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Apple"
-                    android:textSize="13sp"
-                    android:textColor="#666666"
-                    android:layout_marginBottom="4dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_1_redminote13pro5g"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Redmi Note 13 Pro 5G" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="⭐ 4.9"
-                        android:textSize="13sp"
+                        android:text="Redmi Note 13 Pro 5G"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                         android:textColor="#000000"
-                        android:layout_marginRight="8dp" />
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Score: 9.8/10"
+                        android:text="Xiaomi"
                         android:textSize="13sp"
-                        android:textColor="#000000" />
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.5"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 7s Gen 2"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200MP"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5100mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 200MP dengan performa flagship killer"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Performa terbaik dengan A17 Pro dan kamera 5x telephoto"
-                    android:textSize="12sp"
-                    android:textColor="#444444"
-                    android:layout_marginBottom="6dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 21.999.000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#2196F3" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -268,20 +347,22 @@
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
+                android:layout_gravity="right" /> </LinearLayout>
 
-        <!-- Rank 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginBottom="8dp"
             android:background="#FFFFFF"
             android:elevation="1dp">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:text="#2"
@@ -292,73 +373,110 @@
                 android:gravity="center"
                 android:layout_marginRight="12dp" />
 
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/hp_iphone15pro"
-                android:layout_marginRight="12dp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Samsung Galaxy S24 Ultra"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:layout_marginBottom="2dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Samsung"
-                    android:textSize="13sp"
-                    android:textColor="#666666"
-                    android:layout_marginBottom="4dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_2_samsung"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Samsung Galaxy A35" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="⭐ 4.8"
-                        android:textSize="13sp"
+                        android:text="Samsung Galaxy A35"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                         android:textColor="#000000"
-                        android:layout_marginRight="8dp" />
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Score: 9.6/10"
+                        android:text="Samsung"
                         android:textSize="13sp"
-                        android:textColor="#000000" />
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.4"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exynos 1380"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP OIS"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exynos 1380 dengan kamera OIS dan build quality premium"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.899.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fitur lengkap dengan S Pen dan AI terdepan"
-                    android:textSize="12sp"
-                    android:textColor="#444444"
-                    android:layout_marginBottom="6dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 19.999.000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#2196F3" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -373,20 +491,22 @@
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
+                android:layout_gravity="right" /> </LinearLayout>
 
-        <!-- Rank 3 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginBottom="8dp"
             android:background="#FFFFFF"
             android:elevation="1dp">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:text="#3"
@@ -397,73 +517,110 @@
                 android:gravity="center"
                 android:layout_marginRight="12dp" />
 
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/hp_iphone15pro"
-                android:layout_marginRight="12dp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Google Pixel 8 Pro"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:layout_marginBottom="2dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Google"
-                    android:textSize="13sp"
-                    android:textColor="#666666"
-                    android:layout_marginBottom="4dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_3_poco"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="POCO X6" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="⭐ 4.7"
-                        android:textSize="13sp"
+                        android:text="POCO X6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                         android:textColor="#000000"
-                        android:layout_marginRight="8dp" />
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Score: 9.4/10"
+                        android:text="POCO"
                         android:textSize="13sp"
-                        android:textColor="#000000" />
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.3"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 7s Gen 2"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="64MP"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5100mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gaming beast dengan Snapdragon 7s Gen 2"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.799.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AI photography terbaik dengan computational photography"
-                    android:textSize="12sp"
-                    android:textColor="#444444"
-                    android:layout_marginBottom="6dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 15.999.000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#2196F3" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -478,20 +635,22 @@
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
+                android:layout_gravity="right" /> </LinearLayout>
 
-        <!-- Rank 4 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginBottom="8dp"
             android:background="#FFFFFF"
             android:elevation="1dp">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:text="#4"
@@ -502,73 +661,110 @@
                 android:gravity="center"
                 android:layout_marginRight="12dp" />
 
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/hp_iphone15pro"
-                android:layout_marginRight="12dp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="iPhone 15 Pro"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:layout_marginBottom="2dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Apple"
-                    android:textSize="13sp"
-                    android:textColor="#666666"
-                    android:layout_marginBottom="4dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_4_realme"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Realme 12 Pro" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="⭐ 4.8"
-                        android:textSize="13sp"
+                        android:text="Realme 12 Pro"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                         android:textColor="#000000"
-                        android:layout_marginRight="8dp" />
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Score: 9.3/10"
+                        android:text="Realme"
                         android:textSize="13sp"
-                        android:textColor="#000000" />
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.4"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 6 Gen 1"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP + 32MP Tele"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera periscope dengan zoom 2x optical"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Titanium build dengan performa flagship"
-                    android:textSize="12sp"
-                    android:textColor="#444444"
-                    android:layout_marginBottom="6dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 18.999.000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#2196F3" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -583,20 +779,22 @@
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
-                android:layout_gravity="center_vertical" />
-        </LinearLayout>
+                android:layout_gravity="right" /> </LinearLayout>
 
-        <!-- Rank 5 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="16dp"
             android:layout_marginBottom="8dp"
             android:background="#FFFFFF"
             android:elevation="1dp">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:text="#5"
@@ -607,72 +805,110 @@
                 android:gravity="center"
                 android:layout_marginRight="12dp" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/hp_iphone15pro"
-                android:layout_marginRight="12dp" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="IQOO 11"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:layout_marginBottom="2dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="OnePlus"
-                    android:textSize="13sp"
-                    android:textColor="#666666"
-                    android:layout_marginBottom="4dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_5_vivo"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Vivo V30e" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="4dp">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="⭐ 4.6"
-                        android:textSize="13sp"
+                        android:text="Vivo V30e"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
                         android:textColor="#000000"
-                        android:layout_marginRight="8dp" />
+                        android:layout_marginBottom="2dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Score: 9.1/10"
+                        android:text="Vivo"
                         android:textSize="13sp"
-                        android:textColor="#000000" />
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.3"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 6 Gen 1"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP OIS"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5500mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera selfie terbaik dengan OIS"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.899.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Value terbaik dengan performa flagship dan fast charging 120W"
-                    android:textSize="12sp"
-                    android:textColor="#444444"
-                    android:layout_marginBottom="6dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp 12.999.000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="#2196F3" />
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -687,7 +923,7 @@
                 android:paddingRight="16dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="right" />
         </LinearLayout>
 
     </LinearLayout>

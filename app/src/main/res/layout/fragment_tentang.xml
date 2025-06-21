@@ -1,14 +1,612 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.tentang.TentangFragment">
+    android:background="@color/white"
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SmartPhone Rec"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Tentang SmartRec -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang SmartRec"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Platform rekomendasi smartphone terpercaya yang membantu Anda menemukan smartphone yang tepat sesuai kebutuhan dan budget"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Misi Kami -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Misi Kami"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Membantu pengguna membuat keputusan pembelian smartphone yang tepat dengan menyediakan informasi yang akurat, review yang lujur, dan rekomendasi yang personal."
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Visi Kami -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visi Kami"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menjadi platform #1 di Indonesia untuk rekomendasi smartphone yang terpercaya dan mudah digunakan oleh semua kalangan."
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Statistik Aplikasi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Statistik Aplikasi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Grid Layout untuk Statistik -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="24dp">
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500+"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smartphone"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Database"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,200+"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5,000+"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Users"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Item 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.8"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rating"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Fitur Unggulan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fitur Unggulan"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- List Fitur -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Fitur 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Database Lengkap"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  500+ smartphone dari berbagai brand dengan spesifikasi detail"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Fitur 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Kategori Terpilih"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Kategori berdasarkan budget dan keputuhan spesifik"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Fitur 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Rekomendasi Expert"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Rekomendasi dari tim ahil teknologi"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Fitur 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Update Harga Real-time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Harga terbaru dari berbagai marketplace terpercaya"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Fitur 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Trending Analysis"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Analisis smartphone yang sedang trending"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Fitur 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Interface Mobile-First"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Desain yang dioptimalkan untuk penggunaan mobile"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- Tim Pengembang -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tim Pengembang"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Anggota Tim -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Anggota 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Rofik Ramadani"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Lead Developer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Full-stack developer dengan passion di mobile technology"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Anggota 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Muhammad Akmal Fadhurrohman"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Backend Developer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Specialis backend development dan database optimization"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Anggota 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Zaky Taufiqurahman"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Frontend Developer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  UI/UX developer yang fokus pada user experience"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Anggota 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Adi Rahmad Safei"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Mobile Developer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Specialis mobile development dan responsive design"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Anggota 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Daffa Muhammad Al Fatih"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Data Analyst"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Arial analisis data smartphone dan market research"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Anggota 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Kemas Muhammad Alfath Iskandar"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  QA Engineer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Quality assurance dan testing specialist"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Hubungi Kami -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hubungi Kami"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Kontak -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Email"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  contact@smarttec.id"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- WhatsApp -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• WhatsApp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  +62 812-3456-7890"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Alamat -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Alamat"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Lampung, Indonesia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2025 SmartRec. All rights reserved."
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
