@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kamera Terbaik"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smartphone dengan sistem kamera terdepan"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E1"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👑"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 Juara Kategori"
+                    android:textColor="#B8860B"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/hp_iphone15pro"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="iPhone 15 Pro Max" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="iPhone 15 Pro Max"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apple"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.9"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Best Choice"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:background="#FFB74D"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 5x telephoto dengan kualitas video terbaik"
+                        android:textSize="13sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 21.999.000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 5 Kamera Terbaik"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#1"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_iphone15pro"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="iPhone 15 Pro Max" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="iPhone 15 Pro Max"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apple"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.9"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="48MP Main"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12MP Ultra"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12MP Tele 5x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ProRAW"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 5x telephoto dengan kualitas video terbaik"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 21.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/capsule_grey"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_c_2_samsung"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Samsung Galaxy S24 Ultra" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samsung Galaxy S24 Ultra"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samsung"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.8"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200MP Main"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12MP Ultra"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Tele 5x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10MP Tele 3x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 200MP dengan zoom 100x Space Zoom"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 19.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#3"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box_bronze"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_c_3_pixel"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Google Pixel 8 Pro" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google Pixel 8 Pro"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.7"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Main"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="48MP Ultra"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="48MP Tele 5x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Magic Eraser"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI photography terbaik dengan computational photography"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 15.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box_blue"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_c_4_xiaomi"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Xiaomi 14 Ultra" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xiaomi 14 Ultra"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xiaomi"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.6"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP 1-inch"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Ultra"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Tele 3.2x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Tele 5x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera Leica dengan sensor 1-inch terbesar"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 16.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box_blue"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_c_5_oppo"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="OPPO Find X7 Ultra" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OPPO Find X7 Ultra"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OPPO"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.5"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP 1-inch"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Ultra"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Tele 3x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP Tele 6x"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dual periscope dengan Hasselblad partnership"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 17.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP 4 Jutaan Terbaik"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smartphone terbaik dengan budget 3-4 juta rupiah"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E1"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👑"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 Juara Kategori"
+                    android:textColor="#B8860B"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/hp_4jt_1_redminote13pro5g"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="Redmi Note 13 Pro 5G" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Redmi Note 13 Pro 5G"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xiaomi"
+                        android:textSize="14sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.5"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Best Choice"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:background="#FFB74D"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 7s Gen 2"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200MP"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5100mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 200MP dengan performa flagship killer"
+                        android:textSize="13sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.999.000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 5 HP 4 Jutaan Terbaik"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#1"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_1_redminote13pro5g"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Redmi Note 13 Pro 5G" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Redmi Note 13 Pro 5G"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xiaomi"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.5"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 7s Gen 2"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200MP"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5100mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera 200MP dengan performa flagship killer"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/capsule_grey"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_2_samsung"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Samsung Galaxy A35" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samsung Galaxy A35"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Samsung"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.4"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exynos 1380"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP OIS"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exynos 1380 dengan kamera OIS dan build quality premium"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.899.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#3"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box_bronze"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_3_poco"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="POCO X6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POCO X6"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POCO"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.3"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 7s Gen 2"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="64MP"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5100mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gaming beast dengan Snapdragon 7s Gen 2"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.799.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box_blue"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_4_realme"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Realme 12 Pro" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Realme 12 Pro"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Realme"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.4"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 6 Gen 1"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP + 32MP Tele"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera periscope dengan zoom 2x optical"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.999.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" /> </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:elevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"> <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="#5"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_box_blue"
+                android:gravity="center"
+                android:layout_marginRight="12dp" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/hp_4jt_5_vivo"
+                    android:layout_marginRight="12dp"
+                    android:contentDescription="Vivo V30e" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vivo V30e"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vivo"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⭐ 4.3"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Snapdragon 6 Gen 1"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8GB RAM"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"
+                            android:layout_marginRight="4dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50MP OIS"
+                            android:textSize="10sp"
+                            android:textColor="#666666"
+                            android:padding="4dp"
+                            android:background="@drawable/tag_background"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5500mAh"
+                        android:textSize="10sp"
+                        android:textColor="#666666"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_background"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera selfie terbaik dengan OIS"
+                        android:textSize="12sp"
+                        android:textColor="#444444"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.899.000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#2196F3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rank5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Detail"
+                android:background="@drawable/btn_black_ripple"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
