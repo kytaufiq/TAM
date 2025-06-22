@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93720809858",
+    "project_id": "smartphone-recommendatio-c96d7",
+    "storage_bucket": "smartphone-recommendatio-c96d7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93720809858:android:7768eba9b21db0210eff9b",
+        "android_client_info": {
+          "package_name": "com.example.tamuas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsohiNYrrCgHqInyVPUGoVzEk25mdxLX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

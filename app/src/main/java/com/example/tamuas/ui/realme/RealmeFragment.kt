@@ -1,0 +1,495 @@
+package com.example.tamuas.ui.realme
+
+import android.content.Intent
+import android.os.Bundle
+import android.util.Log
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.ImageView
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import kotlinx.coroutines.launch
+import com.example.tamuas.R
+import com.example.tamuas.repository.SmartphoneRepository
+import com.example.tamuas.SmartphoneDetailActivity
+import com.bumptech.glide.Glide
+import java.text.NumberFormat
+import java.util.*
+
+class RealmeFragment : Fragment() {
+
+    private val smartphoneRepository = SmartphoneRepository()
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        Log.d("RealmeFragment", "onCreateView called")
+        return inflater.inflate(R.layout.fragment_realme, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Log.d("RealmeFragment", "onViewCreated called")
+
+        // Setup back button dengan proper navigation
+        view.findViewById<TextView>(R.id.btn_back)?.setOnClickListener {
+            try {
+                findNavController().navigateUp()
+            } catch (e: Exception) {
+                Log.e("RealmeFragment", "Error navigating back with NavController", e)
+                try {
+                    parentFragmentManager.popBackStack()
+                } catch (fallbackError: Exception) {
+                    Log.e("RealmeFragment", "Fallback navigation also failed", fallbackError)
+                    activity?.onBackPressed()
+                }
+            }
+        }
+
+        // Load data dengan proper error handling
+        loadRealmeSmartphones(view)
+    }
+
+    private fun loadRealmeSmartphones(view: View) {
+        Log.d("RealmeFragment", "Starting to load Realme smartphones")
+
+        if (!isAdded || context == null) {
+            Log.w("RealmeFragment", "Fragment not attached, skipping data load")
+            return
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            try {
+                val realmeSmartphones = smartphoneRepository.getRealmeSmartphones()
+
+                if (!isAdded || context == null) {
+                    Log.w("RealmeFragment", "Fragment detached during data load")
+                    return@launch
+                }
+
+                Log.d("RealmeFragment", "Got ${realmeSmartphones.size} Realme smartphones")
+
+                if (realmeSmartphones.isNotEmpty()) {
+                    populateChampionCard(view, realmeSmartphones[0])
+                    populateRankingCards(view, realmeSmartphones)
+                    Log.d("RealmeFragment", "Successfully populated Realme cards")
+                } else {
+                    Log.w("RealmeFragment", "No Realme smartphones found")
+                    showNoDataMessage(view)
+                }
+
+            } catch (e: Exception) {
+                Log.e("RealmeFragment", "Error loading Realme smartphones", e)
+                if (isAdded && context != null) {
+                    showErrorMessage(view)
+                }
+            }
+        }
+    }
+
+    private fun showNoDataMessage(view: View) {
+        try {
+            if (!isAdded || context == null) return
+
+            val championContainer = view.findViewById<LinearLayout>(R.id.realme_champion_container)
+            championContainer?.removeAllViews()
+
+            val noDataText = TextView(requireContext()).apply {
+                text = "Tidak ada data Realme smartphones"
+                textSize = 16f
+                setPadding(32, 32, 32, 32)
+            }
+            championContainer?.addView(noDataText)
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error showing no data message", e)
+        }
+    }
+
+    private fun showErrorMessage(view: View) {
+        try {
+            if (!isAdded || context == null) return
+
+            val championContainer = view.findViewById<LinearLayout>(R.id.realme_champion_container)
+            championContainer?.removeAllViews()
+
+            val errorText = TextView(requireContext()).apply {
+                text = "Error loading Realme smartphones"
+                textSize = 16f
+                setPadding(32, 32, 32, 32)
+            }
+            championContainer?.addView(errorText)
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error showing error message", e)
+        }
+    }
+
+    private fun populateChampionCard(view: View, champion: com.example.tamuas.models.Smartphone) {
+        try {
+            if (!isAdded || context == null) return
+
+            val championContainer = view.findViewById<LinearLayout>(R.id.realme_champion_container)
+
+            if (championContainer != null) {
+                championContainer.removeAllViews()
+                val championCard = createChampionCardProgrammatically(champion)
+                championContainer.addView(championCard)
+            }
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error populating champion card", e)
+        }
+    }
+
+    private fun populateRankingCards(view: View, smartphones: List<com.example.tamuas.models.Smartphone>) {
+        try {
+            if (!isAdded || context == null) return
+
+            val rankingContainer = view.findViewById<LinearLayout>(R.id.realme_ranking_container)
+
+            if (rankingContainer != null) {
+                rankingContainer.removeAllViews()
+
+                smartphones.forEachIndexed { index, smartphone ->
+                    val rankingCard = createRankingCardFromXML(smartphone, index + 1)
+                    rankingContainer.addView(rankingCard)
+                }
+            }
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error populating ranking cards", e)
+        }
+    }
+
+    private fun createChampionCardProgrammatically(smartphone: com.example.tamuas.models.Smartphone): View {
+        val context = requireContext()
+
+        // Main card layout dengan Realme theme
+        val cardLayout = LinearLayout(context).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 48
+            }
+            orientation = LinearLayout.VERTICAL
+            setPadding(32, 32, 32, 32)
+            setBackgroundColor(android.graphics.Color.parseColor("#FFF9C4")) // Realme yellow theme
+            elevation = 8f
+        }
+
+        // Crown header
+        val crownLayout = LinearLayout(context).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 24
+            }
+            orientation = LinearLayout.HORIZONTAL
+        }
+
+        val crownIcon = TextView(context).apply {
+            text = "👑"
+            textSize = 20f
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                rightMargin = 16
+            }
+        }
+
+        val crownText = TextView(context).apply {
+            text = "🏆 Terbaik dari Realme"
+            textSize = 16f
+            setTextColor(android.graphics.Color.parseColor("#F57F17"))
+            setTypeface(null, android.graphics.Typeface.BOLD)
+        }
+
+        crownLayout.addView(crownIcon)
+        crownLayout.addView(crownText)
+
+        // Content layout
+        val contentLayout = LinearLayout(context).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 24
+            }
+            orientation = LinearLayout.HORIZONTAL
+        }
+
+        // Image
+        val imageView = ImageView(context).apply {
+            layoutParams = LinearLayout.LayoutParams(160, 160).apply {
+                rightMargin = 32
+            }
+            scaleType = ImageView.ScaleType.CENTER_CROP
+        }
+
+        try {
+            if (isAdded && context != null) {
+                Glide.with(this)
+                    .load(smartphone.imageUrl)
+                    .placeholder(R.drawable.hp_iphone15pro)
+                    .error(R.drawable.hp_iphone15pro)
+                    .into(imageView)
+            }
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error loading image with Glide", e)
+            imageView.setImageResource(R.drawable.hp_iphone15pro)
+        }
+
+        // Details layout
+        val detailsLayout = LinearLayout(context).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                0,
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                1f
+            )
+            orientation = LinearLayout.VERTICAL
+        }
+
+        // Name
+        val nameView = TextView(context).apply {
+            text = smartphone.name
+            textSize = 18f
+            setTextColor(android.graphics.Color.BLACK)
+            setTypeface(null, android.graphics.Typeface.BOLD)
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 8
+            }
+        }
+
+        // Brand
+        val brandView = TextView(context).apply {
+            text = smartphone.brand
+            textSize = 14f
+            setTextColor(android.graphics.Color.parseColor("#666666"))
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 8
+            }
+        }
+
+        // Rating and Best Choice layout
+        val ratingLayout = LinearLayout(context).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 8
+            }
+            orientation = LinearLayout.HORIZONTAL
+        }
+
+        val ratingView = TextView(context).apply {
+            text = "⭐ ${smartphone.rating}"
+            textSize = 14f
+            setTextColor(android.graphics.Color.BLACK)
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                rightMargin = 16
+            }
+        }
+
+        val bestChoiceView = TextView(context).apply {
+            text = "Best Choice"
+            textSize = 12f
+            setTextColor(android.graphics.Color.WHITE)
+            setPadding(16, 4, 16, 4)
+            setBackgroundColor(android.graphics.Color.parseColor("#FF9800"))
+        }
+
+        ratingLayout.addView(ratingView)
+        ratingLayout.addView(bestChoiceView)
+
+        // Description
+        val descView = TextView(context).apply {
+            text = smartphone.description
+            textSize = 13f
+            setTextColor(android.graphics.Color.parseColor("#444444"))
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply {
+                bottomMargin = 16
+            }
+        }
+
+        // Price
+        val formatter = NumberFormat.getInstance(Locale("id", "ID"))
+        val formattedPrice = "Rp ${formatter.format(smartphone.price)}"
+        val priceView = TextView(context).apply {
+            text = formattedPrice
+            textSize = 16f
+            setTextColor(android.graphics.Color.parseColor("#FF9800"))
+            setTypeface(null, android.graphics.Typeface.BOLD)
+        }
+
+        // Add views to details layout
+        detailsLayout.addView(nameView)
+        detailsLayout.addView(brandView)
+        detailsLayout.addView(ratingLayout)
+        detailsLayout.addView(descView)
+        detailsLayout.addView(priceView)
+
+        // Add to content layout
+        contentLayout.addView(imageView)
+        contentLayout.addView(detailsLayout)
+
+        // Detail Button
+        val detailButton = TextView(context).apply {
+            text = "Lihat Detail"
+            textSize = 14f
+            setTextColor(android.graphics.Color.WHITE)
+            setPadding(40, 20, 40, 20)
+            setBackgroundColor(android.graphics.Color.parseColor("#333333"))
+            setOnClickListener {
+                navigateToDetail(smartphone.id)
+            }
+        }
+
+        // Add all to card
+        cardLayout.addView(crownLayout)
+        cardLayout.addView(contentLayout)
+        cardLayout.addView(detailButton)
+
+        return cardLayout
+    }
+
+    private fun createRankingCardFromXML(smartphone: com.example.tamuas.models.Smartphone, rank: Int): View {
+        val inflater = LayoutInflater.from(requireContext())
+        val cardView = inflater.inflate(R.layout.item_smartphone_realme, null)
+
+        try {
+            // Set rank
+            val rankNumber = cardView.findViewById<TextView>(R.id.tv_realme_rank_number)
+            rankNumber.text = "#$rank"
+
+            // Set rank background color based on position
+            when (rank) {
+                1 -> rankNumber.setBackgroundResource(R.drawable.rounded_box)
+                2 -> rankNumber.setBackgroundResource(R.drawable.capsule_grey)
+                3 -> rankNumber.setBackgroundResource(R.drawable.rounded_box_bronze)
+                else -> rankNumber.setBackgroundResource(R.drawable.rounded_box_blue)
+            }
+
+            // Set image
+            val imageView = cardView.findViewById<ImageView>(R.id.iv_realme_image)
+            try {
+                if (isAdded && context != null) {
+                    Glide.with(this)
+                        .load(smartphone.imageUrl)
+                        .placeholder(R.drawable.hp_iphone15pro)
+                        .error(R.drawable.hp_iphone15pro)
+                        .into(imageView)
+                }
+            } catch (e: Exception) {
+                Log.e("RealmeFragment", "Error loading ranking image", e)
+                imageView.setImageResource(R.drawable.hp_iphone15pro)
+            }
+
+            // Set name
+            val nameView = cardView.findViewById<TextView>(R.id.tv_realme_name)
+            nameView.text = smartphone.name
+
+            // Set brand
+            val brandView = cardView.findViewById<TextView>(R.id.tv_realme_brand)
+            brandView.text = smartphone.brand
+
+            // Set rating
+            val ratingView = cardView.findViewById<TextView>(R.id.tv_realme_rating)
+            ratingView.text = "⭐ ${smartphone.rating}"
+
+            // Set processor
+            val processorView = cardView.findViewById<TextView>(R.id.tv_realme_processor)
+            processorView.text = smartphone.processor
+
+            // Set storage
+            val storageView = cardView.findViewById<TextView>(R.id.tv_realme_storage)
+            storageView.text = smartphone.storage.split("/")[0] // Take first storage option
+
+            // Set camera
+            val cameraView = cardView.findViewById<TextView>(R.id.tv_realme_camera)
+            val cameraText = extractMainCamera(smartphone.camera)
+            cameraView.text = cameraText
+
+            // Set display
+            val displayView = cardView.findViewById<TextView>(R.id.tv_realme_display)
+            val displayText = extractDisplaySize(smartphone.display)
+            displayView.text = displayText
+
+            // Set description
+            val descriptionView = cardView.findViewById<TextView>(R.id.tv_realme_description)
+            descriptionView.text = smartphone.description
+
+            // Set price
+            val priceView = cardView.findViewById<TextView>(R.id.tv_realme_price)
+            val formatter = NumberFormat.getInstance(Locale("id", "ID"))
+            val formattedPrice = "Rp ${formatter.format(smartphone.price)}"
+            priceView.text = formattedPrice
+
+            // Set detail button click
+            val detailButton = cardView.findViewById<TextView>(R.id.btn_realme_detail)
+            detailButton.setOnClickListener {
+                navigateToDetail(smartphone.id)
+            }
+
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error setting up ranking card", e)
+        }
+
+        return cardView
+    }
+
+    private fun extractMainCamera(cameraString: String): String {
+        return when {
+            cameraString.contains("50MP + 64MP") -> "50MP + 64MP"
+            cameraString.contains("108MP") -> "108MP"
+            cameraString.contains("50MP") -> "50MP"
+            else -> "50MP"
+        }
+    }
+
+    private fun extractDisplaySize(displayString: String): String {
+        val regex = Regex("(\\d+\\.\\d+)\\s*inch")
+        val match = regex.find(displayString)
+        return if (match != null) {
+            "${match.groupValues[1]} inch"
+        } else {
+            "6.78 inch"
+        }
+    }
+
+    private fun navigateToDetail(smartphoneId: String) {
+        try {
+            if (!isAdded || context == null) return
+
+            Log.d("RealmeFragment", "Navigating to detail for smartphone: $smartphoneId")
+
+            val bundle = Bundle().apply {
+                putString("smartphone_id", smartphoneId)
+            }
+
+            val navController = findNavController()
+            navController.navigate(R.id.action_realme_to_detail, bundle)
+
+            Log.d("RealmeFragment", "Navigation to detail initiated from Realme")
+
+        } catch (e: Exception) {
+            Log.e("RealmeFragment", "Error navigating to detail", e)
+        }
+    }
+}
